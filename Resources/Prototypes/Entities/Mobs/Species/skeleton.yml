@@ -114,8 +114,8 @@
     - Calcic
   - type: FootPrints
   - type: LayingDown
-  - type: Singer
-    proto: SkeletonSinger
+  - type: Instrument
+    program: 13 # xylophone
 
 - type: entity
   parent: BaseSpeciesDummy
