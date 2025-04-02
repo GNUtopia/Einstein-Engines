@@ -31,3 +31,11 @@
   defaultInstrument: "Voice"
   midiUi: Key
   midiActionId: ActionHarpyPlayMidi # TODO: custom action maybe?
+
+- type: SingerInstrument
+  id: SkeletonSinger
+  instrumentList:
+    "Xylophone": {13: 0}
+  defaultInstrument: "Xylophone"
+  midiUi: Key
+  midiActionId: ActionHarpyPlayMidi
