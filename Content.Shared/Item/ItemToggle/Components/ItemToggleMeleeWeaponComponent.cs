@@ -62,6 +62,18 @@ public sealed partial class ItemToggleMeleeWeaponComponent : Component
     public DamageSpecifier? DeactivatedDamage = null;
 
     /// <summary>
+    ///     Melee range of this item when activated.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public float ActivatedRange = 0;
+
+    /// <summary>
+    ///     Melee range of this item when deactivated.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]
+    public float DeactivatedRange = 0;
+
+    /// <summary>
     ///     Does this become hidden when deactivated
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField, AutoNetworkedField]

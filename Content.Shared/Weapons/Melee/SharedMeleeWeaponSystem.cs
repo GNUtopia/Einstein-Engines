@@ -867,6 +867,14 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             {
                 meleeWeapon.Hidden = false;
             }
+
+            if (itemToggleMelee.ActivatedRange != 0)
+            {
+                //Setting deactivated range to the weapon's regular value before changing it.
+                itemToggleMelee.DeactivatedRange = meleeWeapon.Range;
+                meleeWeapon.Range = itemToggleMelee.ActivatedRange;
+                DirtyField(uid, meleeWeapon, nameof(MeleeWeaponComponent.Range));
+            }
         }
         else
         {
@@ -894,6 +902,12 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             if (itemToggleMelee.DeactivatedSecret)
             {
                 meleeWeapon.Hidden = true;
+            }
+
+            if (itemToggleMelee.DeactivatedRange != 0)
+            {
+                meleeWeapon.Range = itemToggleMelee.DeactivatedRange;
+                DirtyField(uid, meleeWeapon, nameof(MeleeWeaponComponent.Range));
             }
         }
     }
