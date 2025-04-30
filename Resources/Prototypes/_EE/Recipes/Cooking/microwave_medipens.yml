@@ -1,0 +1,131 @@
+- type: microwaveMealRecipe
+  id: RecipeEmergencyMedipen
+  name: emergency medipen recipe
+  result: EmergencyMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Epinephrine: 12
+    TranexamicAcid: 3
+
+- type: microwaveMealRecipe
+  id: RecipeAntiPoisonMedipen
+  name: anti-poison medipen recipe
+  result: AntiPoisonMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Ultravasculine: 10
+    Epinephrine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBruteMedipen
+  name: brute auto-injector recipe
+  result: BruteAutoInjector
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Bicaridine: 15
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurnMedipen
+  name: burn auto-injector recipe
+  result: BurnAutoInjector
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Dermaline: 10
+    Leporazine: 10
+
+- type: microwaveMealRecipe
+  id: RecipeRadMedipen
+  name: rad auto-injector recipe
+  result: RadAutoInjector
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Arithrazine: 15
+    Bicaridine: 5
+
+- type: microwaveMealRecipe
+  id: RecipePunctMedipen
+  name: puncturase auto-injector recipe
+  result: PunctAutoInjector
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Puncturase: 10
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipePyraMedipen
+  name: pyrazine auto-injector recipe
+  result: PyraAutoInjector
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Pyrazine: 10
+    Dermaline: 10
+
+- type: microwaveMealRecipe
+  id: RecipeAirlossMedipen
+  name: airloss auto-injector recipe
+  result: RegenerativeMesh
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Saline: 20
+    DexalinPlus: 20
+
+- type: microwaveMealRecipe
+  id: RecipeSpaceMedipen
+  name: space medipen recipe
+  result: SpaceMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Leporazine: 10
+    Barozine: 20
+
+- type: microwaveMealRecipe
+  id: RecipeCombatMedipen
+  name: combat medipen recipe
+  result: CombatMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Omnizine: 25
+    TranexamicAcid: 5
+
+- type: microwaveMealRecipe
+  id: RecipePainMedipen
+  name: analgesic medipen recipe
+  result: PainMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Morphine: 15
+    Epinephrine: 5
+
+- type: microwaveMealRecipe
+  id: RecipeDetoxMedipen
+  name: detox medipen recipe
+  result: PainMedipen
+  time: 10
+  solids:
+    MaterialMedipen: 1
+  reagents:
+    Ethylredoxrazine: 15
+    Antihol: 5
