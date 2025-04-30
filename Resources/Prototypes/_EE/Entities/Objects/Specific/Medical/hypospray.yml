@@ -29,3 +29,47 @@
           Quantity: 5
   - type: Tag
     tags: []
+
+- type: entity
+  name: detox medipen
+  parent: ChemicalMedipen
+  id: DetoxMedipen
+  description: A rapid dose of ethylredoxrazine and antihol to sober anyone up in seconds.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: painpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: painpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: Ethylredoxrazine
+          Quantity: 15
+        - ReagentId: Antihol
+          Quantity: 5
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: empty medipen
+  parent: ChemicalMedipen
+  id: MaterialMedipen
+  description: A medipen that doesn't have any chemicals in it yet. It can be filled using the microwave.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: painpen
+      map: ["enum.SolutionContainerLayers.Fill"]
