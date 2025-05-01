@@ -1,8 +1,8 @@
 - type: entity
-  name: telescoping pike
+  name: telescopic pike
   parent: BaseItem
   id: RiotSpear
-  description: A riot control spear with a telescoping haft. Best used with a shield.
+  description: A riot control spear with an extendable haft. Best used with a shield.
   components:
   - type: EmbeddableProjectile
     offset: 0.15,0.15
@@ -24,21 +24,23 @@
     - type: DisarmMalus
       malus: 0.6
     - type: HeldSpeedModifier
-      walkModifier: 0.5
-      sprintModifier: 0.5
+      walkModifier: 0.7
+      sprintModifier: 0.7
       mirrorClothingModifier: false
   - type: ItemToggleSize
     activatedSize: Ginormous
   - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/bladeslice.ogg
     activatedDamage:
         types:
-            Piercing: 22
-    activatedRange: 3
+            Piercing: 18
+    activatedRange: 2.75
   - type: ItemToggleDamageOtherOnHit
-    activatedStaminaCost: 8
+    activatedStaminaCost: 6
     activatedDamage:
       types:
-        Piercing: 25
+        Piercing: 20
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
     layers:
@@ -51,15 +53,16 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     range: 1.5
+    attackRate: 1.25
     damage:
       types:
         Piercing: 15
     heavyRateModifier: 1.3
     heavyRangeModifier: 1.25
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 5
+    heavyStaminaCost: 2.5
     maxTargets: 3
-    angle: 10
+    angle: 1
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
@@ -69,8 +72,16 @@
         Piercing: 18
     staminaCost: 6
   - type: Item
-    size: Small
+    size: Normal
+    shape:
+    - 0,0,4,0
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
+  - type: Clothing
+    sprite: DeltaV/Objects/Weapons/Guns/Shotguns/db_shotgun.rsi # Delta-V
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: UseDelay
     delay: 1.5
   - type: Appearance

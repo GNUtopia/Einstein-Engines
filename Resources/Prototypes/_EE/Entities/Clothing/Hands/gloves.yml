@@ -1,0 +1,38 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesTalon
+  name: taloned hand wraps
+  description: A pair of hand wraps that cover your fingertips in sharp talons. Can be dipped in a reagent to inject on hit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/northstar.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/northstar.rsi
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 1
+    heavyStaminaCost: 2
+    heavyDamageBaseModifier: 1.05
+    maxTargets: 1
+    damage:
+      types:
+       Piercing: 8
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcClaw
+    mustBeEquippedToUse: true
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 1
+  - type: MeleeChemicalInjector
+    solution: melee
+  - type: RefillableSolution
+    solution: melee
+  - type: InjectableSolution
+    solution: melee
+  - type: SolutionTransfer
+    maxTransferAmount: 1
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
