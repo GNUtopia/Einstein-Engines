@@ -42,12 +42,12 @@
       types:
         Piercing: 20
   - type: Sprite
-    sprite: Objects/Weapons/Melee/e_sword.rsi
+    sprite: _EE/Objects/Weapons/Melee/telespear.rsi
     layers:
-      - state: e_sword
+      - state: short
         visible: false
         map: ["short"]
-      - state: e_sword_blade
+      - state: long
         visible: false
         map: ["long"]
   - type: MeleeWeapon
@@ -62,7 +62,7 @@
     heavyDamageBaseModifier: 1.0
     heavyStaminaCost: 2.5
     maxTargets: 3
-    angle: 1
+    angle: 0
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
