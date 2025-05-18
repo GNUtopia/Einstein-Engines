@@ -527,3 +527,27 @@
       amount: 2
   products:
     LiftLoversSpecial: 7
+
+- type: reaction
+  id: Dexteritin
+  impact: Medium
+  reactants:
+    Ephedrine:
+      amount: 2
+    Synaptizine:
+      amount: 2
+    Sugar:
+      amount: 1
+  products:
+    Dexteritin: 5
+
+- type: reaction
+  id: Viviance
+  impact: Medium
+  reactants:
+    Dexteritin:
+      amount: 2
+    Licoxide:
+      amount: 1
+  products:
+    Viviance: 3

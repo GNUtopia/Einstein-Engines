@@ -49,3 +49,8 @@ reagent-desc-liftloversspecial = A chemical cocktail that quickly restores stami
 reagent-name-morphine = morphine
 reagent-desc-morphine = A potent analgesic that allows a patient to painlessly undergo surgery even while awake. Highly addictive if overused. Overdose can cause difficulty breathing.
 
+reagent-name-dexteritin = dexteritin
+reagent-desc-dexteritin = A long-lasting stimulant that improves focus and fine motor control, also known as "surgeon's staple." Overuse can cause brain damage.
+
+reagent-name-viviance = Viviance
+reagent-desc-viviance = An experimental derivative of dexteritin that affords greater benefits but severely stresses the nervous system. Use on Nanotrasen stations is banned due to high risk of brain damage.
