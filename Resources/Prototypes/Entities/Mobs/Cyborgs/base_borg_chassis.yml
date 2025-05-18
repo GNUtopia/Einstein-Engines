@@ -172,6 +172,7 @@
   - type: LockedWiresPanel
   - type: Damageable
     damageContainer: Silicon
+    damageModifierSet: Silicon #Goobstation - Iondamage
   - type: Destructible
     thresholds:
     - trigger:
@@ -303,6 +304,8 @@
     - Borg
   - type: AccessReader
     access: [["Command"], ["Research"]]
+  - type: SlavedBorg # DeltaV: NT borgs are enslaved to the AI by default
+    law: ObeyAI
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
   - type: InteractionPopup
@@ -343,3 +346,8 @@
       Unsexed: UnisexSiliconSyndicate
   - type: PointLight
     color: "#dd200b"
+  - type: Damageable 
+    damageContainer: Silicon
+    damageModifierSet: SiliconProtected 
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

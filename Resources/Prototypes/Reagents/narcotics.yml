@@ -52,6 +52,8 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 5
+      - !type:ChemAddMoodlet
+        moodPrototype: StrongStimulant
     Medicine:
       effects:
       - !type:ResetNarcolepsy
@@ -109,6 +111,8 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 5
+      - !type:ChemAddMoodlet
+        moodPrototype: StrongStimulant
     Medicine:
       effects:
       - !type:ResetNarcolepsy
@@ -176,6 +180,8 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 5
+      - !type:ChemAddMoodlet
+        moodPrototype: StrongStimulant
     Medicine:
       metabolismRate: 1.0
       effects:
@@ -289,10 +295,6 @@
           min: 15
       - !type:ChemAddMoodlet
         moodPrototype: SpaceDrugsBenefit
-        conditions:
-        - !type:ReagentThreshold
-          reagent: SpaceDrugs
-          min: 5
 
 - type: reagent
   id: Bananadine
@@ -440,6 +442,8 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
+      - !type:ChemAddMoodlet
+        moodPrototype: TearGasEffect
 
 - type: reagent
   id: Happiness
@@ -473,17 +477,8 @@
         conditions:
         - !type:ReagentThreshold
           min: 20
-      - !type:PopupMessage # we dont have sanity/mood so this will have to do
-        type: Local
-        visualType: Medium
-        messages:
-        - "psicodine-effect-fearless"
-        - "psicodine-effect-anxieties-wash-away"
-        - "psicodine-effect-at-peace"
-        probability: 0.2
-        conditions:
-        - !type:ReagentThreshold
-          max: 20
+      - !type:ChemAddMoodlet
+        moodPrototype: PsicodineEffect
       - !type:GenericStatusEffect
         key: SeeingRainbows
         component: SeeingRainbows
@@ -501,15 +496,12 @@
   physicalDesc: reagent-physical-desc-chalky
   metabolisms:
     Narcotic:
-      metabolismRate: 0.2
+      metabolismRate: 0.25
       effects:
-      - !type:GenericStatusEffect
-        key: SurgerySpeedBoost
-        component: SurgerySpeedModifier
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 16
         damage:
           types:
             Shock: 0.3
@@ -544,14 +536,8 @@
   physicalDesc: reagent-physical-desc-feathery
   metabolisms:
     Narcotic:
-      metabolismRate: 0.2
+      metabolismRate: 0.25
       effects:
-      - !type:GenericStatusEffect
-        key: SurgerySpeedBoost
-        component: SurgerySpeedModifier
-      - !type:GenericStatusEffect
-        key: SurgerySpeedBoost2
-        component: SurgerySpeedModifier # this is jank
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -586,13 +572,22 @@
   group: Narcotics
   desc: reagent-desc-cryanobalamin
   flavor: sweet
-  color: "#f0e551"
-  physicalDesc: reagent-physical-desc-opaque
+  color: "#46a6f5"
+  physicalDesc: reagent-physical-desc-sugary
   metabolisms:
     Narcotic:
       effects:
       - !type:StaminaChange
         amount: -3
+      - !type:SatiateThirst
+        factor: -1
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Cellular: 0.2
 
 - type: reagent
   id: LiftLoversSpecial
@@ -600,18 +595,23 @@
   group: Narcotics
   desc: reagent-desc-liftloversspecial
   flavor: sweet
-  color: "#d9eb6a"
-  physicalDesc: reagent-physical-desc-glowing
+  color: "#f73715"
+  physicalDesc: reagent-physical-desc-unhealthy
   metabolisms:
     Narcotic:
       effects:
       - !type:StaminaChange
         amount: -6
+      - !type:SatiateThirst
+        factor: -2
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 7
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 20
         damage:
           types:
-            Caustic: 3
-            Radiation: 1
+            Cellular: 0.3

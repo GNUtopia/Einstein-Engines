@@ -221,9 +221,11 @@
     - BasicGalaticCommonTranslatorImplanter
     - MofficTranslator
     - N14MaterialCircuitry
+    - VehicleWheelchairFolded # Goobstation
   - type: EmagLatheRecipes
     emagStaticRecipes:
     - BoxLethalshot
+    - BoxShotgunLumen
     - BoxShotgunFlare
     - BoxShotgunSlug
     - MagazineBoxLightRifle
@@ -246,6 +248,8 @@
     - RiotShield
     - SpeedLoaderMagnum
     - SpeedLoaderMagnumEmpty
+    - MagazineLightRifleMarkOneEmpty
+    - MagazineLightRifleMarkOne
     - GrenadeFlashBang # Goobstation
     # .35 Caseless Pistol
     - MagazinePistolCaselessRiflePractice # EE
@@ -267,6 +271,14 @@
     - MagazineMagnum # Goobstation
     - MagazineMagnumLeverRifleEmpty # Goobstation
     - MagazineMagnumLeverRifle # Goobstation
+    - CartridgeEpinephrine # Goobstation
+    - CartridgeBicaridine # Goobstation
+    - CartridgeDermaline # Goobstation
+    - CartridgeEphedrine # Goobstation
+    - CartridgeAtropine # Goobstation
+    - CartridgePuncturase # Goobstation
+    - SecHypo # Goobstation
+    - ParamedHypo # Goobstation - ParamedHypo
 
 - type: entity
   id: AutolatheHyperConvection
@@ -371,7 +383,7 @@
     - WeaponGauntletGorilla
     - SynthesizerInstrument
     - RPED
-    - ClothingShoesBootsMagSci
+    - ClothingShoesBootsMag
     - ClothingShoesBootsMoon
     - ClothingShoesBootsSpeed
     - ClothingShoesBootsMagAdv
@@ -379,12 +391,12 @@
     - HolofanProjector
     - BluespaceBeaker
     - SyringeBluespace
-    - WeaponForceGun
+  #  - WeaponForceGun
     - WeaponLaserSvalinn
     - WeaponCivilianDisabler
     - WeaponProtoKineticAccelerator
-    - WeaponTetherGun
-    - WeaponGrapplingGun
+  #  - WeaponTetherGun
+  #  - WeaponGrapplingGun
     - ClothingBackpackHolding
     - ClothingBackpackSatchelHolding
     - ClothingBackpackDuffelHolding
@@ -416,6 +428,7 @@
     - EnergyScalpel
     - EnergyCautery
     - AdvancedRetractor
+    - VehicleWheelchairFolded # Goobstation
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - BoxBeanbag
@@ -726,11 +739,10 @@
     - BorgModuleLightReplacer
     - BorgModuleAdvancedCleaning
     - BorgModuleMining
-    - BorgModuleGrapplingGun
+  #  - BorgModuleGrapplingGun
     - BorgModuleAdvancedTool
     - BorgModuleGPS
     - BorgModuleRCD
-    - BorgModuleRPD
     - BorgModuleJetpack
     - BorgModulePka
     - BorgModuleArtifact
@@ -805,6 +817,7 @@
     - ModsuitShell
     - ModsuitPlatingExternal
     - PowerCageHigh # Goobstation - Powercell to exosuit fab
+    - ReverseMMI # IPCMMI
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - WeaponMechCombatImmolationGun
@@ -908,6 +921,7 @@
     runningState: icon
     staticRecipes:
       - BoxLethalshot
+      - BoxShotgunLumen
       - BoxShotgunFlare
       - BoxShotgunPractice
       - BoxShotgunSlug
@@ -918,6 +932,7 @@
       - Handcuffs
       - ShellShotgun
       - ShellShotgunSlug
+      - ShellShotgunLumen
       - ShellShotgunFlare
       - ShellTranquilizer
       - MagazineBoxLightRifle
@@ -999,6 +1014,12 @@
       - ClothingHeadHelmetBasic
       - MagazineShotgunBeanbag
       - ShellTranquilizer
+      - CartridgeEpinephrine # Goobstation
+      - CartridgeBicaridine # Goobstation
+      - CartridgeDermaline # Goobstation
+      - CartridgeAtropine # Goobstation
+      - CartridgeSaline # Goobstation
+      - SecHypo # Goobstation
       - BoxBeanbag
       - CartridgePistolRubber
       - CartridgeMagnumRubber
@@ -1024,6 +1045,11 @@
       - BoxShotgunBirdshot
       - BoxShotgun00Buckshot
       - BoxShotgun0000Buckshot
+      - MagazineUniversalMagnumEmpty
+      - MagazineUniversalMagnum
+      - MagazineUniversalMagnumRubber
+      - MagazineLightRifleMarkOneEmpty
+      - MagazineLightRifleMarkOne
     dynamicRecipes:
       - Truncheon
       - Terminus
@@ -1147,6 +1173,10 @@
       - MagazineBoxCaselessRifleShrapnel
       - MagazineBoxCaselessRifleIncendiary
       - MagazineBoxCaselessRifleUranium
+      - MagazineUniversalMagnumUranium
+      - MagazineUniversalMagnumIncendiary
+      - MagazineUniversalMagnumShrapnel
+      - WeaponPistolUniversal
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1184,6 +1214,7 @@
       runningState: icon
       staticRecipes:
         - BoxLethalshot
+        - BoxShotgunLumen
         - BoxShotgunFlare
         - BoxShotgunSlug
         - MagazineBoxLightRifle
@@ -1224,6 +1255,8 @@
         - MagazineBoxCaselessRiflePractice # EE
         - MagazineBoxCaselessRifle # EE
         - MagazineBoxCaselessRifleRubber # EE
+        - MagazineLightRifleMarkOneEmpty
+        - MagazineLightRifleMarkOne
     - type: MaterialStorage
       whitelist:
         tags:
@@ -1298,6 +1331,14 @@
     - ClothingEyesGlassesChemical
     - BoneGel # Shitmed Change
     - AACTablet # DeltaV
+    - VehicleWheelchairFolded # Goobstation - Vehicles
+    - SyringeCase # Morphine
+    - CartridgeAtropine # Goobstation - ParamedHypo
+    - CartridgeEpinephrine # Goobstation - ParamedHypo
+    - CartridgeBicaridine # Goobstation - ParamedHypo
+    - CartridgeDermaline # Goobstation - ParamedHypo
+    - CartridgeSaline # Goobstation - ParamedHypo
+    - ParamedHypo # Goobstation - ParamedHypo
     dynamicRecipes:
     - ChemicalPayload
     - CryostasisBeaker
@@ -1314,6 +1355,11 @@
     - AdvancedRetractor
     - OmnimedTool
     - MedicalCyberneticEyes
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+    - CartridgeEphedrine
+    - CartridgePuncturase
+    - CartridgeTirizene
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

@@ -852,6 +852,9 @@
 - type: Tag
   id: IntercomElectronics
 
+- type: Tag # Goobstation
+  id: JanicartKeys
+
 - type: Tag
   id: JawsOfLife
 
@@ -1050,6 +1053,9 @@
   id: Ore
 
 - type: Tag
+  id: Organ
+
+- type: Tag
   id: Packet
 
 - type: Tag
@@ -1111,6 +1117,9 @@
 
 - type: Tag
   id: PlantSampleTaker
+
+- type: Tag
+  id: PlantSampleTakerHighQuality
 
 - type: Tag
   id: HydroponicsToolClippers
@@ -1193,6 +1202,9 @@
 
 - type: Tag
   id: RifleStock
+
+- type: Tag
+  id: Ring
 
 - type: Tag
   id: RipleyCentralControlModule
@@ -1416,6 +1428,9 @@
 - type: Tag
   id: Vegetable
 
+- type: Tag # Goobstation
+  id: VehicleKey
+
 - type: Tag
   id: VimPilot
 
@@ -1497,6 +1512,9 @@
 - type: Tag
   id: WriteIgnoreStamps
 
+- type: Tag
+  id: FoodBowlBig
+
 # ALPHABETICAL
 
 - type: Tag
@@ -1513,6 +1531,9 @@
 
 - type: Tag
   id: SiliconEmotes
+
+- type: Tag
+  id: MagazineMarkOne
 
 - type: Tag
   id: UnathiEmotes

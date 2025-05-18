@@ -141,3 +141,12 @@
 
 - type: Tag
   id: SpecialMech
+
+- type: Tag
+  id: WeaponPistolDualetta
+
+- type: Tag
+  id: AutoinjectorCartridge
+
+- type: Tag
+  id: Tourniquet

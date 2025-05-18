@@ -40,8 +40,17 @@ reagent-desc-tear-gas = A chemical that causes severe irritation and crying, com
 reagent-name-happiness = happiness
 reagent-desc-happiness = Fills you with ecstatic numbness and causes minor brain damage. Highly addictive. If overdosed causes sudden mood swings.
 
+reagent-name-cryanobalamin = cryanobalamin
+reagent-desc-cryanobalamin = A formerly popular additive to energy drinks to restore stamina, now banned from commercial use due to its carcinogenic properties.
+
+reagent-name-liftloversspecial = lift lovers special
+reagent-desc-liftloversspecial = A chemical cocktail that quickly restores stamina. Despite being officially banned, it remains a popular black-market drink among fitness junkies. Carcinogenic in high doses.
+
+reagent-name-morphine = morphine
+reagent-desc-morphine = A potent analgesic that allows a patient to painlessly undergo surgery even while awake. Highly addictive if overused. Overdose can cause difficulty breathing.
+
 reagent-name-dexteritin = dexteritin
-reagent-desc-dexteritin = A long-lasting stimulant that improves focus and fine motor control, originally developed to assist field surgeons. Overuse can cause nerve damage.
+reagent-desc-dexteritin = A long-lasting stimulant that improves focus and fine motor control, also known as "surgeon's staple." Overuse can cause brain damage.
 
 reagent-name-viviance = Viviance
-reagent-desc-viviance = An experimental derivative of dexteritin that affords greater benefits but severely stresses the body. High doses can also cause amnesia.
+reagent-desc-viviance = An experimental derivative of dexteritin that affords greater benefits but severely stresses the nervous system. Use on Nanotrasen stations is banned due to high risk of brain damage.
